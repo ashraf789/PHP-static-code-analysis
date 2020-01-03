@@ -31,7 +31,7 @@ do
   fi
 done
 
-echo "\nPHPCS validation completed!\n"
+echo "Running PHP Code Beautifier and Fixer (phpcbf)..."
 
 if ! $PASS; then
   echo "\033[41mCOMMIT FAILED:\033[0m Your commit contains files that should pass PHPCS but do not. Please fix the PHPCS errors and try again.\n"
