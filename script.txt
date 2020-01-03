@@ -1,0 +1,10 @@
+// Add the bellow script on your composer script section, then run composer up command 
+
+	"post-update-cmd": [
+            "cp git-hooks/pre-commit .git/hooks/pre-commit",
+            "chmod a+x .git/hooks/pre-commit"
+        ],
+    "post-install-cmd": [
+            "cp git-hooks/pre-commit .git/hooks/pre-commit",
+            "chmod a+x .git/hooks/pre-commit"
+        ]
