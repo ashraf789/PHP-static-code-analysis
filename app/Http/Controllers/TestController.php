@@ -4,9 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class TestController extends Controller
+class testController extends Controller
 {
-    private function testTest()
-    {
+    private function testTest(){
     }
 }
