@@ -18,6 +18,8 @@
         "fzaninotto/faker": "^1.4",
         "mockery/mockery": "^1.0",
         "nunomaduro/collision": "^3.0",
+        "phan/phan": "2.x",
+        "phpmd/phpmd": "^2.8",
         "phpunit/phpunit": "^8.0",
         "squizlabs/php_codesniffer": "^3.5"
     },
