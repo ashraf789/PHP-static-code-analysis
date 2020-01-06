@@ -31,11 +31,13 @@ To automatically fix error run this command on terminal
 ``` ./vendor/bin/phpcbf app/Http/Controllers/TestController.php ```
 
 </br>
+
 Automatically some problem will be fixed.
 we can make a configure file to make it more simple
 make a phpcs.xml file on top of root directory and write this code 
 
 </br>
+
 ```
 <?xml version="1.0"?>
 <ruleset name="PSR2">    
