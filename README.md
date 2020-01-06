@@ -1,6 +1,8 @@
 # PHP static code analysis by PHPCS, PHPMD and PHP Phan
 
 ### PHPCS
+<b>install by composer</b>
+
 ``` composer require --dev squizlabs/php_codesniffer ```
 </br>
 Now create a controller like php artisan make:controller TestController and modify controller 
@@ -57,3 +59,57 @@ Now we can check our all app/ directory code by just a simple command
 </br>
 
 ``` ./vendor/bin/phpcs ```
+
+### PHPMD
+<b>install by composer</b>
+
+``` composer require --dev phpmd/phpmd ```
+</br>
+
+Run PPHMD on terminal 
+
+</br>
+
+``` vendor/bin/phpmd app html cleancode,codesize,controversial,design,naming,unusedcode > phpmd.html ```
+</br>
+
+<b> Command Analysis </b>
+1. vendor/bin/phpmd -> phpmd location </br>
+2. app -> analysis code directory </br>
+3. html -> output formate[text is also fine] </br>
+4. cleancode,codesize,controversial,design,naming,unusedcode -> rule to analysis code </br>
+5. > phpmd.html -> save output on phpmd.html file </br>
+
+</br>
+we can save all rule on a .xml file like 
+Create a file name phpmd.xml now add bellow code
+</br>
+```
+<?xml version="1.0"?>
+<ruleset name="My first PHPMD rule set"
+         xmlns="http://pmd.sf.net/ruleset/1.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sf.net/ruleset/1.0.0
+                       http://pmd.sf.net/ruleset_xml_schema.xsd"
+         xsi:noNamespaceSchemaLocation="
+                       http://pmd.sf.net/ruleset_xml_schema.xsd">
+  <description>
+    My custom rule set that checks my code...
+  </description>
+
+  <rule ref="rulesets/codesize.xml" />
+  <rule ref="rulesets/cleancode.xml" />
+  <rule ref="rulesets/controversial.xml" />
+  <rule ref="rulesets/design.xml" />
+  <rule ref="rulesets/naming.xml" />
+  <rule ref="rulesets/unusedcode.xml" />
+</ruleset>
+```
+</br>
+
+Now we can run PPHMD on terminal like bellow 
+
+</br>
+
+``` vendor/bin/phpmd app html phpmd.xml > phpmd.html ```
+</br>
