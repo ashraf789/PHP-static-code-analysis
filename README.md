@@ -81,13 +81,13 @@ Run PPHMD on terminal
 5. > phpmd.html -> save output on phpmd.html file </br>
 
 </br>
-we can save all rule on a .xml file like 
-Create a file name phpmd.xml like this 
-</br>
-```
-https://github.com/ashraf789/PHP-static-code-analysis/blob/master/phpmd.xml
 
-```
+We can save all rules on a xml file. See the bellow file.
+
+</br>
+
+``` https://github.com/ashraf789/PHP-static-code-analysis/blob/master/phpmd.xml ```
+
 </br>
 
 Now we can run PPHMD on terminal like bellow 
