@@ -82,28 +82,11 @@ Run PPHMD on terminal
 
 </br>
 we can save all rule on a .xml file like 
-Create a file name phpmd.xml now add bellow code
+Create a file name phpmd.xml like this 
 </br>
 ```
-<?xml version="1.0"?>
-<ruleset name="My first PHPMD rule set"
-         xmlns="http://pmd.sf.net/ruleset/1.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://pmd.sf.net/ruleset/1.0.0
-                       http://pmd.sf.net/ruleset_xml_schema.xsd"
-         xsi:noNamespaceSchemaLocation="
-                       http://pmd.sf.net/ruleset_xml_schema.xsd">
-  <description>
-    My custom rule set that checks my code...
-  </description>
+https://github.com/ashraf789/PHP-static-code-analysis/blob/master/phpmd.xml
 
-  <rule ref="rulesets/codesize.xml" />
-  <rule ref="rulesets/cleancode.xml" />
-  <rule ref="rulesets/controversial.xml" />
-  <rule ref="rulesets/design.xml" />
-  <rule ref="rulesets/naming.xml" />
-  <rule ref="rulesets/unusedcode.xml" />
-</ruleset>
 ```
 </br>
 
