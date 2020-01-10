@@ -95,4 +95,23 @@ Now we can run PPHMD on terminal like bellow
 </br>
 
 ``` vendor/bin/phpmd app html phpmd.xml > phpmd.html ```
+</br></br>
+
+### PHAN
+
+<b>install by composer</b>
+``` composer require --dev "phan/phan:2.x" ```
 </br>
+
+The Phan is depend on php-ast so before run project install php-ast. 
+</br>
+Please read this documentation to install php-ast  
+https://github.com/nikic/php-ast
+</br>
+
+Before run PHAN we need to create a PHAN configure file. Create a .phan directory on your project root directory and inside directory make a config.xml file. Give a look on my config file https://github.com/ashraf789/PHP-static-code-analysis/blob/master/.phan/config.php
+
+</br>
+Now run phan on your project </br>
+
+``` ./vendor/bin/phan ```
