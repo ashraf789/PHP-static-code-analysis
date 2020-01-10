@@ -78,7 +78,7 @@ Run PPHMD on terminal
 2. app -> analysable code directory </br>
 3. html -> output formate[text is also fine] </br>
 4. cleancode,codesize,controversial,design,naming,unusedcode -> rule to analysis code </br>
-5. > phpmd.html -> save output on phpmd.html file </br>
+5. "> phpmd.html" -> save output on phpmd.html file </br>
 
 </br>
 
