@@ -5,9 +5,8 @@
 
 ``` composer require --dev squizlabs/php_codesniffer ```
 </br>
-Now create a controller like php artisan make:controller TestController and modify controller 
-TestController should looks like this 
-
+Now create a controller by artisan like php artisan make:controller TestController 
+And modify controller like bellow.
 ``` 
 namespace AppHttpControllers;
 
@@ -25,8 +24,8 @@ Run PPHCS on terminal
 ``` ./vendor/bin/phpcs app/Http/Controllers/TestController.php ```
 </br>
 
-Some error will be display on terminal also you could get some message that some error could be fixed automatically 
-To automatically fix error run this command on terminal 
+Some error will display on terminal also you will get a message on bottom of report that some error could be fixed automatically 
+To automatically fix those error run this command.
 
 </br>
 
@@ -34,7 +33,7 @@ To automatically fix error run this command on terminal
 
 </br>
 
-Automatically some problem will be fixed.
+Automatically some error will be fixed.
 we can make a configure file to make it more simple
 make a phpcs.xml file on top of root directory and write this code 
 
@@ -60,6 +59,7 @@ Now we can check our all app/ directory code by just a simple command
 
 ``` ./vendor/bin/phpcs ```
 
+</br></br>
 ### PHPMD
 <b>install by composer</b>
 
@@ -75,7 +75,7 @@ Run PPHMD on terminal
 
 <b> Command Analysis </b>
 1. vendor/bin/phpmd -> phpmd location </br>
-2. app -> analysis code directory </br>
+2. app -> analysable code directory </br>
 3. html -> output formate[text is also fine] </br>
 4. cleancode,codesize,controversial,design,naming,unusedcode -> rule to analysis code </br>
 5. > phpmd.html -> save output on phpmd.html file </br>
