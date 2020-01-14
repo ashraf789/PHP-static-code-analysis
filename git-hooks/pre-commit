@@ -17,11 +17,11 @@ if [[ "$?" == 1 ]]; then
   exit 1
 fi
 
-RULESET=../../phpcs.xml
+RULESET=./phpcs.xml
 
 for FILE in $STAGED_FILES
 do
-  ./vendor/bin/phpcs --standard="$RULESET" "$FILE"
+  ./vendor/bin/phpcs --standard="$RULESET"
 
   if [[ "$?" == 0 ]]; then
     echo "\t\033[32mPHPCS Passed: $FILE\033[0m"
