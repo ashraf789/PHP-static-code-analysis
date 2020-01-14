@@ -39,6 +39,7 @@ return [
     'exclude_analysis_directory_list' => [
         'vendor/'
     ],
+    // 'minimum_severity' => 0,
 
     // A list of directories that should be parsed for class and
     // method information. After excluding the directories
@@ -49,6 +50,8 @@ return [
     // your application should be included in this list.
     'directory_list' => [
         'app',
+        'vendor/'
+
     ],
 
 ];

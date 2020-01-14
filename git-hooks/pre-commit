@@ -17,7 +17,7 @@ if [[ "$?" == 1 ]]; then
   exit 1
 fi
 
-RULESET=./phpcs.xml
+RULESET=../../phpcs.xml
 
 for FILE in $STAGED_FILES
 do

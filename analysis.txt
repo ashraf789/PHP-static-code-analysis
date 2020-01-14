@@ -1,0 +1,4 @@
+app\Http\Controllers\TestController.php:5 PhanUnreferencedUseNormal Possibly zero references to use statement for classlike/namespace Request (\Illuminate\Http\Request)
+app\Providers\AuthServiceProvider.php:6 PhanUnreferencedUseNormal Possibly zero references to use statement for classlike/namespace Gate (\Illuminate\Support\Facades\Gate)
+app\Providers\EventServiceProvider.php:8 PhanUnreferencedUseNormal Possibly zero references to use statement for classlike/namespace Event (\Illuminate\Support\Facades\Event)
+app\User.php:5 PhanUnreferencedUseNormal Possibly zero references to use statement for classlike/namespace MustVerifyEmail (\Illuminate\Contracts\Auth\MustVerifyEmail)

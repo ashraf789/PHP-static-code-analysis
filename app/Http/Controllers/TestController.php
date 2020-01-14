@@ -9,4 +9,10 @@ class TestController extends Controller
     private function testTest()
     {
     }
+
+    public function index(Request $request)
+    {
+        print_r($request->all());
+        return view("welcome");
+    }
 }
