@@ -91,7 +91,7 @@ Look at my composer.json file
 ``` https://github.com/ashraf789/PHP-static-code-analysis/blob/master/composer.json ```
 </br>
 
-Now go to termianl and run composer up
+Now go to termianl and run ``` composer up ```
 </br>
 <b> That's it </b>
 </br>
