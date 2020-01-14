@@ -86,14 +86,15 @@ Now we have to move git-hooks file inside .git/hooks/ directory to move there we
 ```
 </br>
 
-Look at my composer.json file </br>
+Look at my composer.json file 
+</br>
 ``` https://github.com/ashraf789/PHP-static-code-analysis/blob/master/composer.json ```
 </br>
+
 Now go to termianl and run composer up
 </br>
 <b> That's it </b>
-
-</br></br>
+</br>
 
 
 ### PHPMD
