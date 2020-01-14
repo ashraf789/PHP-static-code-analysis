@@ -59,7 +59,43 @@ Now we can check our all app/ directory code by just a simple command
 
 ``` ./vendor/bin/phpcs ```
 
+Every time we write any new code we have to run this command again and again. 
+We can make it more simpler like we could add a rule on git pre hook to run this before any new commit.
+
+<b>Git pre hook add: </b>
+
+create folder name git-hooks and inside the folder create a file name pre-hooks
+then add this code on your git-hooks file 
+</br>
+``` https://github.com/ashraf789/PHP-static-code-analysis/blob/master/git-hooks/pre-commit ```
+</br>
+
+Now we have to move git-hooks file inside .git/hooks/ directory to move there we will use composer. 
+</br> Add this below code on your composer.json file inside the scripts.
+</br>
+
+```
+"post-update-cmd": [
+            "cp git-hooks/pre-commit .git/hooks/pre-commit",
+            "chmod a+x .git/hooks/pre-commit"
+        ],
+        "post-install-cmd": [
+            "cp git-hooks/pre-commit .git/hooks/pre-commit",
+            "chmod a+x .git/hooks/pre-commit"
+        ]
+```
+</br>
+
+Look at my composer.json file </br>
+``` https://github.com/ashraf789/PHP-static-code-analysis/blob/master/composer.json ```
+</br>
+Now go to termianl and run composer up
+</br>
+<b> That's it </b>
+
 </br></br>
+
+
 ### PHPMD
 <b>install by composer</b>
 
