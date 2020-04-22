@@ -73,20 +73,6 @@ then add this code on your git-hooks file
 Now we have to move git-hooks file inside .git/hooks/ directory to move there we will use composer. 
 </br> Add this below code on your composer.json file inside the scripts.
 </br>
-
-<b> Windows </b>
-```
-"post-update-cmd": [
-            "copy git-hooks/pre-commit .git/hooks/pre-commit",
-            "chmod a+x .git/hooks/pre-commit"
-        ],
-        "post-install-cmd": [
-            "copy git-hooks/pre-commit .git/hooks/pre-commit",
-            "chmod a+x .git/hooks/pre-commit"
-        ]
-```
-
-<b> Unix Environment </b>
 ```
 "post-update-cmd": [
             "cp git-hooks/pre-commit .git/hooks/pre-commit",
@@ -97,8 +83,13 @@ Now we have to move git-hooks file inside .git/hooks/ directory to move there we
             "chmod a+x .git/hooks/pre-commit"
         ]
 ```
-<b> Note: Note: In case of any error. Please manually copy the pre-commit file to .git/hooks/ folder </b>
-
+<b> Note: please use git bash if you get any error like bellow  </b>
+```
+> cp git-hooks/pre-commit .git/hooks/pre-commit
+'cp' is not recognized as an internal or external command,
+operable program or batch file.
+Script cp git-hooks/pre-commit .git/hooks/pre-commit handling the post-install-cmd event returned with error code 1
+```
 </br>
 
 Look at my composer.json file 
